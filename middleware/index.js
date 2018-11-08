@@ -36,6 +36,7 @@ middlewareObj.checkCommentOwnership = function(req, res, next) {
                 if(foundComment.author.id.equals(req.user._id)) {
                     next();
                 } else {
+                    req.flash("error", "Please login first!");
                     res.redirect("back");
                 }
             }
