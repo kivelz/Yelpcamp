@@ -24,8 +24,7 @@ router.post("/register", function(req, res){
 
 //show login form
 router.get("/login", function(req, res){
-    req.flash("error", "Please Login First!")
-   res.render("login");
+     res.render("login");
 });
 //handling login logic
 
