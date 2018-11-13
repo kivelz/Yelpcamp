@@ -18,8 +18,6 @@ var indexRoutes = require("./routes/index");
 
 
 mongoose.connect(process.env.DATABASEURL);
-// mongoose.connect("mongodb://kivel:Phyllisa25@ds155833.mlab.com:55833/yelpcamp");
-
 
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));
